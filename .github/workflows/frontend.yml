@@ -2,16 +2,12 @@ name: Frontend Build
 
 on:
   push:
-    paths:
-      - 'frontend/**'
+    branches:
+      - main
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: frontend
 
     steps:
       - name: Checkout
